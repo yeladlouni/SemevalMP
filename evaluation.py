@@ -1,3 +1,4 @@
+from evaluators.semeval_evaluator import SemevalEvaluator
 from evaluators.sick_evaluator import SICKEvaluator
 from evaluators.msrp_evaluator import MSRPEvaluator
 from evaluators.msrvid_evaluator import MSRVIDEvaluator
@@ -16,7 +17,8 @@ class MPCNNEvaluatorFactory(object):
         'msrvid': MSRVIDEvaluator,
         'trecqa': TRECQAEvaluator,
         'wikiqa': WikiQAEvaluator,
-        'sts': STSEvaluator
+        'sts': STSEvaluator,
+        'semeval': SemevalEvaluator
     }
 
     @staticmethod
