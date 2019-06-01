@@ -46,7 +46,7 @@ if __name__ == '__main__':
     parser.add_argument('--word-vectors-file', help='word vectors filename', default='fasttext.webteb.100d.vec')
     parser.add_argument('--word-vectors-dim', type=int, default=100, help='number of dimensions of word vectors (default: 300)')
     parser.add_argument('--skip-training', help='will load pre-trained model', action='store_true')
-    parser.add_argument('--device', type=int, default=-1, help='GPU device, -1 for CPU (default: 0)')
+    parser.add_argument('--device', type=int, default=0, help='GPU device, -1 for CPU (default: 0)')
     parser.add_argument('--wide-conv', action='store_true', default=False, help='use wide convolution instead of narrow convolution (default: false)')
     parser.add_argument('--multichannel', action='store_true', default=False, help='use multichannels to enable embedding update (default: false)')
     parser.add_argument('--attention', choices=['none', 'basic', 'idf', 'modified_euclidean'], default='none', help='type of attention to use')
